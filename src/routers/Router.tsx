@@ -1,3 +1,4 @@
+import TagDetailPage from "components/pages/TagDetailPage";
 import TopPage from "components/pages/TopPage";
 import { memo } from "react";
 import { Route, Switch } from "react-router-dom";
@@ -10,7 +11,7 @@ export const Router: React.FC = memo(() => {
                 <TopPage />
             </Route>
             <Route path="/tag">
-                <p>タグ一覧ページ</p>
+                <TagDetailPage />
             </Route>
         </Switch>
     );
